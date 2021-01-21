@@ -8,16 +8,18 @@ def my_func_1(x, y):
     z = x ** y
     return z
 
-print(my_func_1(2, 4))
+print(my_func_1(2, -4))
 
 def my_func_2(x, y):
+###возведение в отрицательную степень###
     i=1
     z=x
-    while y != i:
+    while abs(y) != i:
         z = z * x
         i += 1
+    z = 1 / z
     return z
 
-print(my_func_2(2, 8))
+print(my_func_2(2, -4))
 
 
