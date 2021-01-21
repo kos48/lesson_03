@@ -11,3 +11,4 @@ def division_func(a, b):
         return result
 
 print(division_func(10, 0))
+#1
