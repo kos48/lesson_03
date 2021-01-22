@@ -11,13 +11,20 @@ def my_func_1(x, y):
 print(my_func_1(2, -4))
 
 def my_func_2(x, y):
-###возведение в отрицательную степень###
-    i=1
-    z=x
-    while abs(y) != i:
-        z = z * x
-        i += 1
-    z = 1 / z
+    i = 1
+    z = x
+    if y < 0:
+### возведение в отрицательную степень ###
+        while abs(y) != i:
+            z = z * x
+            i += 1
+        z = 1 / z
+### Возведение в положительную степень ###
+    else:
+        while y != i:
+            z = z * x
+            i += 1
+
     return z
 
 print(my_func_2(2, -4))
