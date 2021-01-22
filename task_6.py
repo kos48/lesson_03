@@ -17,4 +17,3 @@ for el in user_line.split():
     str += int_func(el) + ' '
 print(str)
 
-#6
