@@ -8,7 +8,7 @@ def my_func_1(x, y):
     z = x ** y
     return z
 
-print(my_func_1(2, -4))
+print(my_func_1(6, -4))
 
 def my_func_2(x, y):
     i = 1
@@ -20,13 +20,16 @@ def my_func_2(x, y):
             i += 1
         z = 1 / z
 ### Возведение в положительную степень ###
-    else:
+    elif y > 0:
         while y != i:
             z = z * x
             i += 1
 
+    else:
+        z = 1
+
     return z
 
-print(my_func_2(2, -4))
+print(my_func_2(6, -4))
 
 
